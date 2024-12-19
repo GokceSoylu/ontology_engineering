@@ -1,0 +1,51 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix dbr: <http://dbpedia.org/resource/> .
+@prefix ex: <http://example.org/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+dbr:Pulp_Fiction a dbo:Film ;
+    rdfs:label "Pulp_Fiction"@en,
+        "Кримінальне чтиво"@ua ;
+    dbo:genre dbr:Neo_noir ;
+    dbo:starring dbr:Bruce_Willis,
+        dbr:John_Travolta,
+        dbr:Uma_Thurman ;
+    ex:fictionalCharacter dbr:Vincent_Vega ;
+    ex:playsIn dbr:Los_Angeles .
+
+dbr:Quentin_Tarantino a dbo:Director .
+
+dbr:Tenet a dbo:Film ;
+    rdfs:label "Tenet"@en ;
+    dbo:starring dbr:Elizabeth_Debicki,
+        dbr:John_David_Washington,
+        dbr:Robert_Pattinson .
+
+dbr:The_Green_Mile a dbo:Film ;
+    rdfs:label "The Green Mile"@en,
+        "Зелена миля"@ua ;
+    dbo:starring dbr:David_Morse,
+        dbr:Tom_Hanks .
+
+dbr:Bruce_Willis a dbo:Actor .
+
+dbr:David_Morse a dbo:Actor .
+
+dbr:Elizabeth_Debicki a dbo:Actor .
+
+dbr:John_David_Washington a dbo:Actor .
+
+dbr:John_Travolta a dbo:Actor ;
+    dbo:awards dbr:67th_Academy_Awards ;
+    ex:portrays dbr:Vincent_Vega .
+
+dbr:Robert_Pattinson a dbo:Actor .
+
+dbr:Tom_Hanks a dbo:Actor .
+
+dbr:Uma_Thurman a dbo:Actor ;
+    dbo:awards dbr:67th_Academy_Awards ;
+    ex:portrays dbr:Mia_Wallace .
+
+dbr:Vincent_Vega a dbo:Fictional_character .
+
