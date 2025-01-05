@@ -1,0 +1,102 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:ex="http://example.org/ontology#">
+
+    <!-- Ontology -->
+    <owl:Ontology rdf:about="http://example.org/ontology#"/>
+
+    <!-- Classes -->
+    <owl:Class rdf:about="ex:Event"/>
+    <owl:Class rdf:about="ex:Location"/>
+    <owl:Class rdf:about="ex:Time"/>
+    <owl:Class rdf:about="ex:Participant"/>
+    <owl:Class rdf:about="ex:Organizer"/>
+
+    <!-- Object Properties -->
+    <owl:ObjectProperty rdf:about="ex:hasLocation">
+        <rdfs:domain rdf:resource="ex:Event"/>
+        <rdfs:range rdf:resource="ex:Location"/>
+    </owl:ObjectProperty>
+
+    <owl:ObjectProperty rdf:about="ex:hasTime">
+        <rdfs:domain rdf:resource="ex:Event"/>
+        <rdfs:range rdf:resource="ex:Time"/>
+    </owl:ObjectProperty>
+
+    <owl:ObjectProperty rdf:about="ex:hasParticipant">
+        <rdfs:domain rdf:resource="ex:Event"/>
+        <rdfs:range rdf:resource="ex:Participant"/>
+    </owl:ObjectProperty>
+
+    <owl:ObjectProperty rdf:about="ex:hasOrganizer">
+        <rdfs:domain rdf:resource="ex:Event"/>
+        <rdfs:range rdf:resource="ex:Organizer"/>
+    </owl:ObjectProperty>
+
+    <!-- Data Properties -->
+    <owl:DatatypeProperty rdf:about="ex:startDate">
+        <rdfs:domain rdf:resource="ex:Time"/>
+        <rdfs:range rdf:resource="xsd:date"/>
+    </owl:DatatypeProperty>
+
+    <owl:DatatypeProperty rdf:about="ex:endDate">
+        <rdfs:domain rdf:resource="ex:Time"/>
+        <rdfs:range rdf:resource="xsd:date"/>
+    </owl:DatatypeProperty>
+
+    <owl:DatatypeProperty rdf:about="ex:eventType">
+        <rdfs:domain rdf:resource="ex:Event"/>
+        <rdfs:range rdf:resource="xsd:string"/>
+    </owl:DatatypeProperty>
+
+    <owl:DatatypeProperty rdf:about="ex:city">
+        <rdfs:domain rdf:resource="ex:Location"/>
+        <rdfs:range rdf:resource="xsd:string"/>
+    </owl:DatatypeProperty>
+
+    <owl:DatatypeProperty rdf:about="ex:venue">
+        <rdfs:domain rdf:resource="ex:Location"/>
+        <rdfs:range rdf:resource="xsd:string"/>
+    </owl:DatatypeProperty>
+
+    <!-- Individuals -->
+    <rdf:Description rdf:about="ex:AI_Conference">
+        <rdf:type rdf:resource="ex:Event"/>
+        <ex:eventType>Conference</ex:eventType>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="ex:Blockchain_Summit">
+        <rdf:type rdf:resource="ex:Event"/>
+        <ex:eventType>Workshop</ex:eventType>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="ex:Music_Festival">
+        <rdf:type rdf:resource="ex:Event"/>
+        <ex:eventType>Concert</ex:eventType>
+    </rdf:Description>
+
+    <!-- Example Relationships -->
+    <rdf:Description rdf:about="ex:AI_Conference">
+        <ex:hasLocation rdf:resource="ex:New_York"/>
+        <ex:hasTime rdf:resource="ex:AI_Time"/>
+        <ex:hasParticipant rdf:resource="ex:John_Doe"/>
+        <ex:hasParticipant rdf:resource="ex:Jane_Smith"/>
+        <ex:hasOrganizer rdf:resource="ex:Tech_Events_Inc"/>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="ex:New_York">
+        <rdf:type rdf:resource="ex:Location"/>
+        <ex:city>New York</ex:city>
+        <ex:venue>Conference Center</ex:venue>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="ex:AI_Time">
+        <rdf:type rdf:resource="ex:Time"/>
+        <ex:startDate>2024-12-01</ex:startDate>
+        <ex:endDate>2024-12-03</ex:endDate>
+    </rdf:Description>
+</rdf:RDF>
