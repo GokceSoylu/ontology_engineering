@@ -1,0 +1,1152 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="urn:webprotege:ontology:90c2887d-3555-40a9-8a5e-e7e9f3b59f0e#"
+     xml:base="urn:webprotege:ontology:90c2887d-3555-40a9-8a5e-e7e9f3b59f0e"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:ontology="http://example.org/ontology/">
+    <owl:Ontology rdf:about="urn:webprotege:ontology:90c2887d-3555-40a9-8a5e-e7e9f3b59f0e"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://example.org/ontology/follows -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/ontology/follows">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:label>follows</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/ontology/hasLocation -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/ontology/hasLocation">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://example.org/ontology/EVENT"/>
+        <rdfs:range rdf:resource="http://example.org/ontology/LOCATION"/>
+        <rdfs:label>hasLocation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/ontology/hasOrganizer -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/ontology/hasOrganizer">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://example.org/ontology/EVENT"/>
+        <rdfs:range rdf:resource="http://example.org/ontology/ORGANIZER"/>
+        <rdfs:label>hasOrganizer</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/ontology/hasParticipant -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/ontology/hasParticipant">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://example.org/ontology/EVENT"/>
+        <rdfs:range rdf:resource="http://example.org/ontology/PARTICIPANT"/>
+        <rdfs:label>hasParticipant</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/ontology/hasTime -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/ontology/hasTime">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://example.org/ontology/EVENT"/>
+        <rdfs:range rdf:resource="http://example.org/ontology/TIME"/>
+        <rdfs:label>hasTime</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/ontology/isSameAs -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/ontology/isSameAs">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://example.org/ontology/PARTICIPANT"/>
+        <rdfs:range rdf:resource="http://example.org/ontology/ORGANIZER"/>
+        <rdfs:label>isSameAs</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/ontology/partOf -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/ontology/partOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://example.org/ontology/EVENT"/>
+        <rdfs:range rdf:resource="http://example.org/ontology/EVENT"/>
+        <rdfs:label>partOf</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://example.org/ontology/city -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/ontology/city">
+        <rdfs:domain rdf:resource="http://example.org/ontology/LOCATION"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>city</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/ontology/endDate -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/ontology/endDate">
+        <rdfs:domain rdf:resource="http://example.org/ontology/TIME"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:label>endDate</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/ontology/eventType -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/ontology/eventType">
+        <rdfs:domain rdf:resource="http://example.org/ontology/EVENT"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>eventType</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/ontology/startDate -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/ontology/startDate">
+        <rdfs:domain rdf:resource="http://example.org/ontology/TIME"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:label>startDate</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/ontology/venue -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/ontology/venue">
+        <rdfs:domain rdf:resource="http://example.org/ontology/LOCATION"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>venue</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://example.org/ontology/AcademicEvent -->
+
+    <owl:Class rdf:about="http://example.org/ontology/AcademicEvent">
+        <rdfs:subClassOf rdf:resource="http://example.org/ontology/EVENT"/>
+        <rdfs:label>AcademicEvent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/ontology/CommunityEvent -->
+
+    <owl:Class rdf:about="http://example.org/ontology/CommunityEvent">
+        <rdfs:subClassOf rdf:resource="http://example.org/ontology/EVENT"/>
+        <rdfs:label>CommunityEvent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/ontology/CulturalEvent -->
+
+    <owl:Class rdf:about="http://example.org/ontology/CulturalEvent">
+        <rdfs:subClassOf rdf:resource="http://example.org/ontology/EVENT"/>
+        <rdfs:label>CulturalEvent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/ontology/EVENT -->
+
+    <owl:Class rdf:about="http://example.org/ontology/EVENT">
+        <rdfs:label xml:lang="en-us">EVENT</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/ontology/EntertainmentEvent -->
+
+    <owl:Class rdf:about="http://example.org/ontology/EntertainmentEvent">
+        <rdfs:subClassOf rdf:resource="http://example.org/ontology/EVENT"/>
+        <rdfs:label>EntertainmentEvent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/ontology/LOCATION -->
+
+    <owl:Class rdf:about="http://example.org/ontology/LOCATION">
+        <rdfs:label xml:lang="en-us">LOCATION</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/ontology/ORGANIZER -->
+
+    <owl:Class rdf:about="http://example.org/ontology/ORGANIZER">
+        <rdfs:label xml:lang="en-us">ORGANIZER</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/ontology/PARTICIPANT -->
+
+    <owl:Class rdf:about="http://example.org/ontology/PARTICIPANT">
+        <rdfs:label xml:lang="en-us">PARTICIPANT</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/ontology/SportingEvent -->
+
+    <owl:Class rdf:about="http://example.org/ontology/SportingEvent">
+        <rdfs:subClassOf rdf:resource="http://example.org/ontology/EVENT"/>
+        <rdfs:label>SportingEvent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/ontology/TIME -->
+
+    <owl:Class rdf:about="http://example.org/ontology/TIME">
+        <rdfs:label xml:lang="en-us">TIME</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://example.org/ontology/AI_Conferance -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/AI_Conferance">
+        <rdf:type rdf:resource="http://example.org/ontology/AcademicEvent"/>
+        <ontology:hasLocation rdf:resource="http://example.org/ontology/NewYork"/>
+        <ontology:hasOrganizer rdf:resource="http://example.org/ontology/CodeConvene"/>
+        <ontology:hasParticipant rdf:resource="http://example.org/ontology/Jane_Smith"/>
+        <ontology:hasParticipant rdf:resource="http://example.org/ontology/John_Doe"/>
+        <ontology:hasTime rdf:resource="http://example.org/ontology/AI_Time"/>
+        <ontology:eventType xml:lang="en">Conferance</ontology:eventType>
+        <rdfs:label xml:lang="en">AI_Conferance</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/AI_Seminar -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/AI_Seminar">
+        <rdf:type rdf:resource="http://example.org/ontology/AcademicEvent"/>
+        <ontology:hasLocation rdf:resource="http://example.org/ontology/Boston"/>
+        <ontology:hasOrganizer rdf:resource="http://example.org/ontology/EventureTech"/>
+        <ontology:hasParticipant rdf:resource="http://example.org/ontology/DrAlice"/>
+        <ontology:hasParticipant rdf:resource="http://example.org/ontology/DrBob"/>
+        <ontology:hasTime rdf:resource="http://example.org/ontology/SeminarTime"/>
+        <ontology:eventType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">seminar</ontology:eventType>
+        <rdfs:label>AI_Seminar</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/AI_Time -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/AI_Time">
+        <rdf:type rdf:resource="http://example.org/ontology/TIME"/>
+        <ontology:endDate xml:lang="en">2000-01-01T00:00:00</ontology:endDate>
+        <ontology:startDate xml:lang="en">2000-01-01T00:00:00</ontology:startDate>
+        <rdfs:label xml:lang="en">AI_Time</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/ActorsGroup -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/ActorsGroup">
+        <rdfs:label>ActorsGroup</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/AdvisorDrSmith -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/AdvisorDrSmith">
+        <rdf:type rdf:resource="http://example.org/ontology/PARTICIPANT"/>
+        <rdfs:label>AdvisorDrSmith</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/Alice_Walker -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/Alice_Walker">
+        <rdf:type rdf:resource="http://example.org/ontology/PARTICIPANT"/>
+        <rdfs:label>Alice_Walker</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/Ankara -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/Ankara">
+        <rdf:type rdf:resource="http://example.org/ontology/LOCATION"/>
+        <rdfs:label>Ankara</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/Art_exhibition -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/Art_exhibition">
+        <rdf:type rdf:resource="http://example.org/ontology/CulturalEvent"/>
+        <ontology:hasLocation rdf:resource="http://example.org/ontology/Rome"/>
+        <ontology:hasOrganizer rdf:resource="http://example.org/ontology/GalleryEssence"/>
+        <ontology:hasParticipant rdf:resource="http://example.org/ontology/ArtistsGroup"/>
+        <ontology:hasTime rdf:resource="http://example.org/ontology/ExhibitionTime"/>
+        <ontology:eventType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Exhibition</ontology:eventType>
+        <rdfs:label>Art_exhibition</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/ArtistsGroup -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/ArtistsGroup">
+        <rdf:type rdf:resource="http://example.org/ontology/PARTICIPANT"/>
+        <rdfs:label>ArtistsGroup</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/Beach_Cleanup -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/Beach_Cleanup">
+        <rdf:type rdf:resource="http://example.org/ontology/EVENT"/>
+        <rdfs:label>Beach_Cleanup</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/Berlin -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/Berlin">
+        <rdf:type rdf:resource="http://example.org/ontology/LOCATION"/>
+        <rdfs:label>Berlin</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/Blockchain_Workshop -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/Blockchain_Workshop">
+        <rdf:type rdf:resource="http://example.org/ontology/AcademicEvent"/>
+        <ontology:hasLocation rdf:resource="http://example.org/ontology/NewYork"/>
+        <ontology:hasOrganizer rdf:resource="http://example.org/ontology/CodeConvene"/>
+        <ontology:hasParticipant rdf:resource="http://example.org/ontology/Alice_Walker"/>
+        <ontology:hasParticipant rdf:resource="http://example.org/ontology/Bob_Marley"/>
+        <ontology:hasTime rdf:resource="http://example.org/ontology/AI_Time"/>
+        <ontology:partOf rdf:resource="http://example.org/ontology/AI_Conferance"/>
+        <ontology:eventType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Workshop</ontology:eventType>
+        <rdfs:label>Blockchain_Workshop</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/Bob_Marley -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/Bob_Marley">
+        <rdf:type rdf:resource="http://example.org/ontology/PARTICIPANT"/>
+        <rdfs:label>Bob_Marley</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/Boston -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/Boston">
+        <rdf:type rdf:resource="http://example.org/ontology/LOCATION"/>
+        <rdfs:label>Boston</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/CharityOrg -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/CharityOrg">
+        <rdf:type rdf:resource="http://example.org/ontology/ORGANIZER"/>
+        <rdfs:label>CharityOrg</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/CheckmateSociety -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/CheckmateSociety">
+        <rdf:type rdf:resource="http://example.org/ontology/ORGANIZER"/>
+        <rdfs:label>CheckmateSociety</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/Chess_Tournament -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/Chess_Tournament">
+        <rdf:type rdf:resource="http://example.org/ontology/SportingEvent"/>
+        <ontology:hasLocation rdf:resource="http://example.org/ontology/Paris"/>
+        <ontology:hasOrganizer rdf:resource="http://example.org/ontology/CheckmateSociety"/>
+        <ontology:hasParticipant rdf:resource="http://example.org/ontology/Player1"/>
+        <ontology:hasParticipant rdf:resource="http://example.org/ontology/Player2"/>
+        <ontology:hasTime rdf:resource="http://example.org/ontology/TournamentTime"/>
+        <ontology:eventType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tournament</ontology:eventType>
+        <rdfs:label>Chess_Tournament</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/Chicago -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/Chicago">
+        <rdf:type rdf:resource="http://example.org/ontology/LOCATION"/>
+        <rdfs:label>Chicago</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/CinemaX -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/CinemaX">
+        <rdf:type rdf:resource="http://example.org/ontology/LOCATION"/>
+        <rdfs:label>CinemaX</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/City_Marathon -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/City_Marathon">
+        <rdf:type rdf:resource="http://example.org/ontology/SportingEvent"/>
+        <ontology:hasLocation rdf:resource="http://example.org/ontology/Berlin"/>
+        <ontology:hasOrganizer rdf:resource="http://example.org/ontology/MarathonersUnited"/>
+        <ontology:hasParticipant rdf:resource="http://example.org/ontology/RunnersGroup"/>
+        <ontology:hasTime rdf:resource="http://example.org/ontology/MarathonTime"/>
+        <ontology:eventType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Marathon</ontology:eventType>
+        <rdfs:label>City_Marathon</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/CleanupTime -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/CleanupTime">
+        <rdf:type rdf:resource="http://example.org/ontology/TIME"/>
+        <ontology:endDate xml:lang="en">2025-01-02T00:00:00</ontology:endDate>
+        <ontology:startDate xml:lang="en">2025-01-01T00:00:00</ontology:startDate>
+        <rdfs:label xml:lang="en">CleanupTime</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/CodeConvene -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/CodeConvene">
+        <rdf:type rdf:resource="http://example.org/ontology/ORGANIZER"/>
+        <rdfs:label>CodeConvene</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/ComedyClub -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/ComedyClub">
+        <rdf:type rdf:resource="http://example.org/ontology/LOCATION"/>
+        <rdfs:label>ComedyClub</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/ConcertTime -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/ConcertTime">
+        <rdf:type rdf:resource="http://example.org/ontology/TIME"/>
+        <ontology:endDate xml:lang="en">2000-01-01T00:00:00</ontology:endDate>
+        <ontology:startDate xml:lang="en">2000-01-01T00:00:00</ontology:startDate>
+        <rdfs:label xml:lang="en">ConcertTime</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/DefenseTime -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/DefenseTime">
+        <rdf:type rdf:resource="http://example.org/ontology/TIME"/>
+        <ontology:endDate xml:lang="en">2000-03-01T00:00:00</ontology:endDate>
+        <ontology:startDate xml:lang="en">2000-03-01T00:00:00</ontology:startDate>
+        <rdfs:label xml:lang="en">DefenseTime</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/DowntownClub -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/DowntownClub">
+        <rdf:type rdf:resource="http://example.org/ontology/LOCATION"/>
+        <rdfs:label>DowntownClub</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/DrAlice -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/DrAlice">
+        <rdf:type rdf:resource="http://example.org/ontology/PARTICIPANT"/>
+        <rdfs:label>DrAlice</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/DrBob -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/DrBob">
+        <rdf:type rdf:resource="http://example.org/ontology/PARTICIPANT"/>
+        <rdfs:label>DrBob</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/EnvironmentGroup -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/EnvironmentGroup">
+        <rdf:type rdf:resource="http://example.org/ontology/ORGANIZER"/>
+        <rdfs:label>EnvironmentGroup</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/EventPlanners -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/EventPlanners">
+        <rdf:type rdf:resource="http://example.org/ontology/ORGANIZER"/>
+        <rdfs:label>EventPlanners</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/EventureTech -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/EventureTech">
+        <rdf:type rdf:resource="http://example.org/ontology/ORGANIZER"/>
+        <rdfs:label>EventureTech</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/ExhibitionTime -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/ExhibitionTime">
+        <rdf:type rdf:resource="http://example.org/ontology/TIME"/>
+        <ontology:endDate xml:lang="en">2005-01-02T00:00:00</ontology:endDate>
+        <ontology:startDate xml:lang="en">2005-01-01T00:00:00</ontology:startDate>
+        <rdfs:label xml:lang="en">ExhibitionTime</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/FestivalTime -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/FestivalTime">
+        <rdf:type rdf:resource="http://example.org/ontology/TIME"/>
+        <ontology:endDate xml:lang="en">2000-01-05T00:00:00</ontology:endDate>
+        <ontology:startDate xml:lang="en">2000-01-04T00:00:00</ontology:startDate>
+        <rdfs:label xml:lang="en">FestivalTime</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/Festiverse -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/Festiverse">
+        <rdf:type rdf:resource="http://example.org/ontology/ORGANIZER"/>
+        <rdfs:label>Festiverse</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/FilmClub -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/FilmClub">
+        <rdf:type rdf:resource="http://example.org/ontology/ORGANIZER"/>
+        <rdfs:label>FilmClub</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/FilmFans -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/FilmFans">
+        <rdfs:label>FilmFans</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/FootballMatch -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/FootballMatch">
+        <rdf:type rdf:resource="http://example.org/ontology/SportingEvent"/>
+        <ontology:hasLocation rdf:resource="http://example.org/ontology/Stadium1"/>
+        <ontology:hasOrganizer rdf:resource="http://example.org/ontology/SportUnity"/>
+        <ontology:hasParticipant rdf:resource="http://example.org/ontology/TeamA"/>
+        <ontology:hasParticipant rdf:resource="http://example.org/ontology/TeamB"/>
+        <ontology:hasTime rdf:resource="http://example.org/ontology/MatchTime"/>
+        <ontology:eventType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Match</ontology:eventType>
+        <rdfs:label>FootballMatch</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/FutureTech_Academy -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/FutureTech_Academy">
+        <rdf:type rdf:resource="http://example.org/ontology/ORGANIZER"/>
+        <rdfs:label>FutureTech_Academy</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/GalaTime -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/GalaTime">
+        <rdf:type rdf:resource="http://example.org/ontology/TIME"/>
+        <ontology:endDate xml:lang="en">2000-02-01T00:00:00</ontology:endDate>
+        <ontology:startDate xml:lang="en">2000-02-01T00:00:00</ontology:startDate>
+        <rdfs:label xml:lang="en">GalaTime</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/GalleryEssence -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/GalleryEssence">
+        <rdf:type rdf:resource="http://example.org/ontology/ORGANIZER"/>
+        <rdfs:label>GalleryEssence</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/Hamlet_Play -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/Hamlet_Play">
+        <rdf:type rdf:resource="http://example.org/ontology/CulturalEvent"/>
+        <ontology:hasLocation rdf:resource="http://example.org/ontology/London"/>
+        <ontology:hasOrganizer rdf:resource="http://example.org/ontology/StudioSpectrum"/>
+        <ontology:hasParticipant rdf:resource="http://example.org/ontology/ActorsGroup"/>
+        <ontology:hasTime rdf:resource="http://example.org/ontology/PlayTime"/>
+        <ontology:eventType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TheaterPlay</ontology:eventType>
+        <rdfs:label>Hamlet_Play</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/HarmonyHub -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/HarmonyHub">
+        <rdf:type rdf:resource="http://example.org/ontology/ORGANIZER"/>
+        <rdfs:label>HarmonyHub</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/Hasan_Sabbah -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/Hasan_Sabbah">
+        <rdf:type rdf:resource="http://example.org/ontology/PARTICIPANT"/>
+        <rdfs:label>Hasan_Sabbah</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/HotelGrand -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/HotelGrand">
+        <rdf:type rdf:resource="http://example.org/ontology/LOCATION"/>
+        <rdfs:label>HotelGrand</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/Jane_Smith -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/Jane_Smith">
+        <rdf:type rdf:resource="http://example.org/ontology/PARTICIPANT"/>
+        <rdfs:label>Jane_Smith</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/John_Doe -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/John_Doe">
+        <rdf:type rdf:resource="http://example.org/ontology/PARTICIPANT"/>
+        <rdfs:label>John_Doe</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/Kurt_Cobain -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/Kurt_Cobain">
+        <rdf:type rdf:resource="http://example.org/ontology/PARTICIPANT"/>
+        <rdfs:label>Kurt_Cobain</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/LaughOutLoud -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/LaughOutLoud">
+        <rdf:type rdf:resource="http://example.org/ontology/ORGANIZER"/>
+        <rdfs:label>LaughOutLoud</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/London -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/London">
+        <rdf:type rdf:resource="http://example.org/ontology/LOCATION"/>
+        <rdfs:label>London</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/LosAngeles -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/LosAngeles">
+        <rdf:type rdf:resource="http://example.org/ontology/LOCATION"/>
+        <rdfs:label>LosAngeles</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/MarathonTime -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/MarathonTime">
+        <rdf:type rdf:resource="http://example.org/ontology/TIME"/>
+        <ontology:endDate xml:lang="en">2009-12-13T00:00:00</ontology:endDate>
+        <ontology:startDate xml:lang="en">2009-12-12T00:00:00</ontology:startDate>
+        <rdfs:label xml:lang="en">MarathonTime</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/MarathonersUnited -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/MarathonersUnited">
+        <rdf:type rdf:resource="http://example.org/ontology/ORGANIZER"/>
+        <rdfs:label>MarathonersUnited</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/MatchTime -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/MatchTime">
+        <rdf:type rdf:resource="http://example.org/ontology/TIME"/>
+        <ontology:endDate xml:lang="en">2000-08-01T00:00:00</ontology:endDate>
+        <ontology:startDate xml:lang="en">2000-06-01T00:00:00</ontology:startDate>
+        <rdfs:label xml:lang="en">MatchTime</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/Metallica -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/Metallica">
+        <rdf:type rdf:resource="http://example.org/ontology/PARTICIPANT"/>
+        <rdfs:label>Metallica</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/MiamiBeach -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/MiamiBeach">
+        <rdf:type rdf:resource="http://example.org/ontology/LOCATION"/>
+        <rdfs:label>MiamiBeach</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/Music_Festival -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/Music_Festival">
+        <rdf:type rdf:resource="http://example.org/ontology/CulturalEvent"/>
+        <ontology:hasLocation rdf:resource="http://example.org/ontology/Chicago"/>
+        <ontology:hasOrganizer rdf:resource="http://example.org/ontology/Festiverse"/>
+        <ontology:hasParticipant rdf:resource="http://example.org/ontology/Kurt_Cobain"/>
+        <ontology:hasTime rdf:resource="http://example.org/ontology/FestivalTime"/>
+        <ontology:eventType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Festival</ontology:eventType>
+        <rdfs:label>Music_Festival</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/NetworkingTime -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/NetworkingTime">
+        <rdf:type rdf:resource="http://example.org/ontology/TIME"/>
+        <ontology:endDate xml:lang="en">2000-04-01T00:00:00</ontology:endDate>
+        <ontology:startDate xml:lang="en">2000-04-01T00:00:00</ontology:startDate>
+        <rdfs:label xml:lang="en">NetworkingTime</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/NewYear_Party -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/NewYear_Party">
+        <rdf:type rdf:resource="http://example.org/ontology/EntertainmentEvent"/>
+        <ontology:hasLocation rdf:resource="http://example.org/ontology/DowntownClub"/>
+        <ontology:hasOrganizer rdf:resource="http://example.org/ontology/EventPlanners"/>
+        <ontology:hasParticipant rdf:resource="http://example.org/ontology/PartyGoers"/>
+        <ontology:hasTime rdf:resource="http://example.org/ontology/PartyTime"/>
+        <ontology:eventType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Party</ontology:eventType>
+        <rdfs:label>NewYear_Party</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/NewYork -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/NewYork">
+        <rdf:type rdf:resource="http://example.org/ontology/LOCATION"/>
+        <rdfs:label>NewYork</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/Oscar_Screening -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/Oscar_Screening">
+        <rdf:type rdf:resource="http://example.org/ontology/EntertainmentEvent"/>
+        <ontology:hasLocation rdf:resource="http://example.org/ontology/CinemaX"/>
+        <ontology:hasOrganizer rdf:resource="http://example.org/ontology/FilmClub"/>
+        <ontology:hasParticipant rdf:resource="http://example.org/ontology/FilmFans"/>
+        <ontology:hasTime rdf:resource="http://example.org/ontology/ScreeningTime"/>
+        <ontology:eventType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MovieScreening</ontology:eventType>
+        <rdfs:label>Oscar_Screening</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/Paris -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/Paris">
+        <rdf:type rdf:resource="http://example.org/ontology/LOCATION"/>
+        <rdfs:label>Paris</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/PartyGoers -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/PartyGoers">
+        <rdf:type rdf:resource="http://example.org/ontology/PARTICIPANT"/>
+        <rdfs:label>PartyGoers</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/PartyTime -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/PartyTime">
+        <rdf:type rdf:resource="http://example.org/ontology/TIME"/>
+        <ontology:endDate xml:lang="en">2000-02-02T00:00:00</ontology:endDate>
+        <ontology:startDate xml:lang="en">2000-02-01T00:00:00</ontology:startDate>
+        <rdfs:label xml:lang="en">PartyTime</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/PlayTime -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/PlayTime">
+        <rdf:type rdf:resource="http://example.org/ontology/TIME"/>
+        <ontology:endDate xml:lang="en">2023-10-12T00:00:00</ontology:endDate>
+        <ontology:startDate xml:lang="en">2022-10-12T00:00:00</ontology:startDate>
+        <rdfs:label xml:lang="en">PlayTime</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/Player1 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/Player1">
+        <rdf:type rdf:resource="http://example.org/ontology/PARTICIPANT"/>
+        <rdfs:label>Player1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/Player2 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/Player2">
+        <rdf:type rdf:resource="http://example.org/ontology/PARTICIPANT"/>
+        <rdfs:label>Player2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/RockConcert -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/RockConcert">
+        <rdf:type rdf:resource="http://example.org/ontology/CulturalEvent"/>
+        <ontology:hasLocation rdf:resource="http://example.org/ontology/LosAngeles"/>
+        <ontology:hasOrganizer rdf:resource="http://example.org/ontology/HarmonyHub"/>
+        <ontology:hasParticipant rdf:resource="http://example.org/ontology/Metallica"/>
+        <ontology:hasTime rdf:resource="http://example.org/ontology/ConcertTime"/>
+        <ontology:eventType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Consert</ontology:eventType>
+        <rdfs:label>RockConcert</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/Rome -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/Rome">
+        <rdf:type rdf:resource="http://example.org/ontology/LOCATION"/>
+        <rdfs:label>Rome</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/RunnersGroup -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/RunnersGroup">
+        <rdf:type rdf:resource="http://example.org/ontology/PARTICIPANT"/>
+        <rdfs:label>RunnersGroup</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/SanFrancisco -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/SanFrancisco">
+        <rdf:type rdf:resource="http://example.org/ontology/LOCATION"/>
+        <rdfs:label>SanFrancisco</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/ScreeningTime -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/ScreeningTime">
+        <rdf:type rdf:resource="http://example.org/ontology/TIME"/>
+        <ontology:endDate xml:lang="en">2000-05-05T00:00:00</ontology:endDate>
+        <ontology:startDate xml:lang="en">2000-05-01T00:00:00</ontology:startDate>
+        <rdfs:label xml:lang="en">ScreeningTime</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/SeminarTime -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/SeminarTime">
+        <rdf:type rdf:resource="http://example.org/ontology/TIME"/>
+        <ontology:endDate xml:lang="en">2000-09-12T00:00:00</ontology:endDate>
+        <ontology:startDate xml:lang="en">2000-09-01T00:00:00</ontology:startDate>
+        <rdfs:label xml:lang="en">SeminarTime</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/ShowTime -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/ShowTime">
+        <rdf:type rdf:resource="http://example.org/ontology/TIME"/>
+        <ontology:endDate xml:lang="en">2000-05-04T00:00:00</ontology:endDate>
+        <ontology:startDate xml:lang="en">2000-05-01T00:00:00</ontology:startDate>
+        <rdfs:label xml:lang="en">ShowTime</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/SiliconValley -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/SiliconValley">
+        <rdf:type rdf:resource="http://example.org/ontology/LOCATION"/>
+        <rdfs:label>SiliconValley</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/SportUnity -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/SportUnity">
+        <rdf:type rdf:resource="http://example.org/ontology/ORGANIZER"/>
+        <rdfs:label>SportUnity</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/Stadium1 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/Stadium1">
+        <rdf:type rdf:resource="http://example.org/ontology/LOCATION"/>
+        <rdfs:label>Stadium1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/StartupFounders -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/StartupFounders">
+        <rdfs:label>StartupFounders</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/StartupHub -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/StartupHub">
+        <rdf:type rdf:resource="http://example.org/ontology/ORGANIZER"/>
+        <rdfs:label>StartupHub</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/StudioSpectrum -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/StudioSpectrum">
+        <rdf:type rdf:resource="http://example.org/ontology/ORGANIZER"/>
+        <rdfs:label>StudioSpectrum</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/TeamA -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/TeamA">
+        <rdf:type rdf:resource="http://example.org/ontology/PARTICIPANT"/>
+        <rdfs:label>TeamA</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/TeamB -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/TeamB">
+        <rdf:type rdf:resource="http://example.org/ontology/PARTICIPANT"/>
+        <rdfs:label>TeamB</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/Tech_Networking -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/Tech_Networking">
+        <rdf:type rdf:resource="http://example.org/ontology/CommunityEvent"/>
+        <ontology:hasLocation rdf:resource="http://example.org/ontology/SiliconValley"/>
+        <ontology:hasOrganizer rdf:resource="http://example.org/ontology/StartupHub"/>
+        <ontology:hasParticipant rdf:resource="http://example.org/ontology/StartupFounders"/>
+        <ontology:hasTime rdf:resource="http://example.org/ontology/NetworkingTime"/>
+        <ontology:eventType xml:lang="en">NetworkingEvent</ontology:eventType>
+        <rdfs:label xml:lang="en">Tech_Networking</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/Thesis_Defense_John -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/Thesis_Defense_John">
+        <rdf:type rdf:resource="http://example.org/ontology/AcademicEvent"/>
+        <ontology:hasLocation rdf:resource="http://example.org/ontology/Ankara"/>
+        <ontology:hasOrganizer rdf:resource="http://example.org/ontology/UniverstyY"/>
+        <ontology:hasParticipant rdf:resource="http://example.org/ontology/AdvisorDrSmith"/>
+        <ontology:hasParticipant rdf:resource="http://example.org/ontology/John_Doe"/>
+        <ontology:hasTime rdf:resource="http://example.org/ontology/DefenseTime"/>
+        <ontology:eventType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ThesisDefense</ontology:eventType>
+        <rdfs:label>Thesis_Defense_John</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/TournamentTime -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/TournamentTime">
+        <rdf:type rdf:resource="http://example.org/ontology/TIME"/>
+        <ontology:endDate xml:lang="en">2000-01-01T00:00:00</ontology:endDate>
+        <ontology:startDate xml:lang="en">2000-01-01T00:00:00</ontology:startDate>
+        <rdfs:label xml:lang="en">TournamentTime</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/UniverstyY -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/UniverstyY">
+        <rdf:type rdf:resource="http://example.org/ontology/ORGANIZER"/>
+        <rdfs:label>UniverstyY</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontology/WorkshopTime -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontology/WorkshopTime">
+        <rdf:type rdf:resource="http://example.org/ontology/TIME"/>
+        <ontology:endDate xml:lang="en">2024-10-20T00:00:00</ontology:endDate>
+        <ontology:startDate xml:lang="en">2024-10-16T00:00:00</ontology:startDate>
+        <rdfs:label xml:lang="en">WorkshopTime</rdfs:label>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.13) https://github.com/owlcs/owlapi -->
+

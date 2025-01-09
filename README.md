@@ -41,3 +41,36 @@ Reuse of Existing Ontologies: An existing ontology, such as those for events or 
 activities, might be reused to address part of the problem. However, customizations will be
 needed to meet the specific requirements of the event system. A thorough comparison of
 available ontologies will be conducted to assess if reuse is possible.
+
+
+
+
+
+TechEventsInc
+CodeConvene
+EventureTech
+
+MusicLoversInc
+HarmonyHub
+
+TechInstitut
+FutureTech Academy
+
+FestEventsInc
+Festiverse
+
+ArtGallery
+Gallery Essence
+
+SportsClub
+SportUnity
+
+DramaCompamy
+Studio_Spectrum
+
+
+ChessAssociation
+Checkmate Society
+
+RunClub 
+Marathoners United
